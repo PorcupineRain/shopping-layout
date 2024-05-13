@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize@2.0.0/modern-normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <title>Shopping Layout</title>
+</head>
+
+<body>
+    <main>
+        <section class="product-card asics">
+            <header class="product-header">
+                <div class="header-overlay">
+                    <aside class="sticker">Free Shippint!</aside>
+                    <p class="picture-credits">Photo by: Maksim Larin</p>
+                </div>
+                <img class="product-picture"
+                    src="//images.unsplash.com/photo-1560072810-1cffb09faf0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                    alt="A pair of blue sporty sneakers with orange details and a white sole." />
+            </header>
+            <div class="product-description">
+                <h1>Asics</h1>
+                <p> Suede fabric pointed toe stylish cut front low heel sharp on-trend
+                    toe point raised heel drop sides unique silhouette. Bow detail
+                    metallic eyelets leather lining luxurious finish classic courts
+                    formal slingback square...
+                </p>
+            </div>
+            <footer class="product-card-footer">
+                <p class="product-price">$65 USD</p>
+                <div class="size-quantity">
+                    <div class="product-size">
+                        <label for="asics-size">Size:</label>
+                        <select id="asics-size" name="size">
+                            <option value="5,5">5,5</option>
+                            <option value="6" selected>6</option>
+                            <option value="6,5">6,5</option>
+                            <option value="7,5">7,5</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="11,5">11,5</option>
+                        </select>
+                    </div>
+                    <div class="product-quantity">
+                        <label for="asics-quantity">Quantity:</label>
+                        <select id="asics-quantity" name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-color">
+                    <p>Color:</p>
+                    <input type="radio" name="color" id="blue" />
+                    <label for="blue"><span class="blue"></span></label>
+                    <input type="radio" name="color" id="red" />
+                    <label for="red"><span class="red"></span></label>
+                    <input type="radio" name="color" id="black" />
+                    <label for="black"><span class="black"></span></label>
+                </div>
+                <input class="cart-button" type="button" value="Add to Cart" />
+            </footer>
+        </section>
+        <section class="product-card adidas">
+            <header class="product-header">
+                <div class="header-overlay">
+                    <p class="picture-credits">Photo by: Daniel Storek</p>
+                </div>
+                <img class="product-picture"
+                    src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="White Sneakers with a thin black and red stripe on the sides." />
+            </header>
+            <div class="product-description">
+                <h1>Adidas</h1>
+                <p> Effortless comfortable full leather lining eye-catching unique
+                    detail to the toe low 'cut-away' sides, clean and sleek. Polished
+                    finish elegant court shoe work duty strechy slingback strap mid
+                    kitten heel this ladylike...
+                </p>
+            </div>
+            <footer class="product-card-footer">
+                <p class="product-price">$30 USD</p>
+                <div class="size-quantity">
+                    <div class="product-size">
+                        <label for="adidas-size">Size:</label>
+                        <select id="adidas-size" name="size">
+                            <option value="5,5">5,5</option>
+                            <option value="6" selected>6</option>
+                            <option value="6,5">6,5</option>
+                            <option value="7,5">7,5</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="11,5">11,5</option>
+                        </select>
+                    </div>
+                    <div class="product-quantity">
+                        <label for="adidas-quantity">Quantity:</label>
+                        <select id="adidas-quantity" name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-color">
+                    <p>Color:</p>
+                    <input type="radio" name="color" id="green-black" />
+                    <label for="green-black"><span class="green-black"></span></label>
+                    <input type="radio" name="color" id="blue-black" />
+                    <label for="blue-black"><span class="blue-black"></span></label>
+                    <input type="radio" name="color" id="pink-black" />
+                    <label for="pink-black"><span class="pink-black"></span></label>
+                </div>
+                <input class="cart-button" type="button" value="Add to Cart" />
+            </footer>
+        </section>
+        <section class="product-card new-balance">
+            <header class="product-header">
+                <div class="header-overlay">
+                    <aside class="sticker">Just One Left!</aside>
+                    <p class="picture-credits">Photo by: felipepelaquim</p>
+                </div>
+                <img class="product-picture"
+                    src="https://images.unsplash.com/photo-1539185441755-769473a23570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80"
+                    alt="Muted dark green Sneaker with big black letter N on the side. White sole." />
+            </header>
+            <div class="product-description">
+                <h1>New Balance</h1>
+                <p> Suede fabric pointed toe stylish cut front low heel sharp on-trend
+                    toe point raised heel drop sides unique silhouette. Bow detail
+                    metallic eyelets leather lining luxurious finish classic courts
+                    formal slingback square...
+                </p>
+            </div>
+            <footer class="product-card-footer">
+                <p class="product-price">$45 USD</p>
+                <div class="size-quantity">
+                    <div class="product-size">
+                        <label for="new-balance-size">Size:</label>
+                        <select id="new-balance-size" name="size">
+                            <option value="5,5">5,5</option>
+                            <option value="6" selected>6</option>
+                            <option value="6,5">6,5</option>
+                            <option value="7,5">7,5</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="11,5">11,5</option>
+                        </select>
+                    </div>
+                    <div class="product-quantity">
+                        <label for="new-balance-quantity">Quantity:</label>
+                        <select id="new-balance-quantity" name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-color">
+                    <p>Color:</p>
+                    <input type="radio" name="color" id="red-white" />
+                    <label for="red-white"><span class="red-white"></span></label>
+                    <input type="radio" name="color" id="black-white" />
+                    <label for="black-white"><span class="black-white"></span></label>
+                </div>
+                <input class="cart-button" type="button" value="Add to Cart" />
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
