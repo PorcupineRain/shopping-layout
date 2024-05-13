@@ -31,6 +31,7 @@ main {
   background-color: var(--background-product-card);
   border-radius: 1.5rem;
   margin: 1.5rem;
+  box-shadow: 1rem 1rem 1.5rem var(--text-regular);
 }
 .product-header {
   position: relative;
@@ -67,4 +68,117 @@ main {
   bottom: 1rem;
   left: 1rem;
   font-size: 0.5em;
+}
+.product-description {
+  padding: 1rem;
+}
+
+.product-card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: var(--background-body);
+  border-radius: inherit;
+  padding: 1rem;
+  margin: 1rem;
+}
+.product-price {
+  background-color: var(--background-product-card);
+  color: var(--text-heading);
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
+}
+.size-quantity {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.select {
+  border-radius: 0.5rem;
+  border: var(--text-regular);
+  width: 30%;
+}
+.product-color {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+input[type="radio"] {
+  appearance: none;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 5rem;
+}
+input[type="radio"]:checked {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5rem;
+}
+
+input[id="blue"] {
+  background-color: rgb(35, 35, 161);
+}
+input[id="red"] {
+  background-color: rgb(215, 33, 33);
+}
+input[id="black"] {
+  background-color: black;
+}
+input[id="green-black"] {
+  background: linear-gradient(
+    to right,
+    #748767 0%,
+    #748767 50%,
+    #000000 50%,
+    #000000 100%
+  );
+}
+input[id="blue-black"] {
+  background: linear-gradient(
+    to right,
+    #4983d0 0%,
+    #4983d0 50%,
+    #000000 50%,
+    #000000 100%
+  );
+}
+input[id="pink-black"] {
+  background: linear-gradient(
+    to right,
+    #ae5b7f 0%,
+    #ae5b7f 50%,
+    #000000 50%,
+    #000000 100%
+  );
+}
+input[id="red-white"] {
+  background: linear-gradient(
+    to right,
+    #ba0d0d 0%,
+    #ba0d0d 50%,
+    #ffffff 50%,
+    #ffffff 100%
+  );
+  border: solid 0.07rem var(--text-regular);
+}
+input[id="black-white"] {
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 50%,
+    #ffffff 50%,
+    #ffffff 100%
+  );
+  border: solid 0.07rem var(--text-regular);
+}
+
+.cart-button {
+  border-radius: 0.5rem;
+  color: var(--background-body);
+  background-color: var(--background-button);
+  border: none;
+  padding: 1rem;
 }
